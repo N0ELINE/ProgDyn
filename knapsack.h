@@ -20,6 +20,13 @@ typedef struct {
     int poids;
 } Object;
 
+#define ARRAY_LIST_MAX_SIZE 100
+
+typedef struct {
+    float data[ARRAY_LIST_MAX_SIZE];
+    int coutTotal;
+    int poidsTotal;
+} Knapsack;
 
 #endif /* KNAPSACK_H */
 
