@@ -21,12 +21,20 @@ typedef struct {
 } Object;
 
 #define ARRAY_LIST_MAX_SIZE 100
+//#define taille=-1
 
 typedef struct {
-    float data[ARRAY_LIST_MAX_SIZE];
+    Object data[ARRAY_LIST_MAX_SIZE];
+    int taille;
     int coutTotal;
     int poidsTotal;
 } Knapsack;
+
+
+
+void triSac(Object *tab, int size_t);
+void knapsack(Object tab[], int size_t, Knapsack *sac, int W);
+void initialise(Knapsack sac);
 
 #endif /* KNAPSACK_H */
 
